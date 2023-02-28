@@ -25,7 +25,7 @@ exports.getPostMessage = (req, res) => {
         res.send("Message is valid")
         res.end()
     } else {
-        console.log("Message rejected, missing following information")
+        console.log("Message rejected, missing following information:")
         for (let item in missingKeys){
             console.log(missingKeys[item])
         }
